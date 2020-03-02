@@ -1,0 +1,74 @@
+E:\Extra\shailesh\.net core\Employee\Employee\bin\Debug\netcoreapp2.2\Employee.deps.json
+E:\Extra\shailesh\.net core\Employee\Employee\bin\Debug\netcoreapp2.2\Employee.runtimeconfig.json
+E:\Extra\shailesh\.net core\Employee\Employee\bin\Debug\netcoreapp2.2\Employee.runtimeconfig.dev.json
+E:\Extra\shailesh\.net core\Employee\Employee\bin\Debug\netcoreapp2.2\Employee.dll
+E:\Extra\shailesh\.net core\Employee\Employee\bin\Debug\netcoreapp2.2\Employee.pdb
+E:\Extra\shailesh\.net core\Employee\Employee\bin\Debug\netcoreapp2.2\Employee.Views.dll
+E:\Extra\shailesh\.net core\Employee\Employee\bin\Debug\netcoreapp2.2\Employee.Views.pdb
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.csproj.CoreCompileInputs.cache
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.RazorAssemblyInfo.cache
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.RazorAssemblyInfo.cs
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.AssemblyInfoInputs.cache
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.AssemblyInfo.cs
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.TagHelpers.input.cache
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.TagHelpers.output.cache
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.RazorCoreGenerate.cache
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.g.cshtml.cs
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\Home\create.g.cshtml.cs
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\Home\Details.g.cshtml.cs
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\Home\Edit.g.cshtml.cs
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\Home\EmployeeNotFound.g.cshtml.cs
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\Shared\NotFound.g.cshtml.cs
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.RazorTargetAssemblyInfo.cache
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.RazorTargetAssemblyInfo.cs
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.Views.pdb
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.dll
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.pdb
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.csproj.CopyComplete
+E:\Extra\shailesh\.net core\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.csprojAssemblyReference.cache
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\bin\Debug\netcoreapp2.2\libman.json
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\bin\Debug\netcoreapp2.2\Employee.deps.json
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\bin\Debug\netcoreapp2.2\Employee.runtimeconfig.json
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\bin\Debug\netcoreapp2.2\Employee.runtimeconfig.dev.json
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\bin\Debug\netcoreapp2.2\Employee.dll
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\bin\Debug\netcoreapp2.2\Employee.pdb
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\bin\Debug\netcoreapp2.2\Employee.Views.dll
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\bin\Debug\netcoreapp2.2\Employee.Views.pdb
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.RazorAssemblyInfo.cache
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.RazorAssemblyInfo.cs
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.AssemblyInfoInputs.cache
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.AssemblyInfo.cs
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.TagHelpers.input.cache
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.TagHelpers.output.cache
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.RazorCoreGenerate.cache
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\Administrator\CreateRole.cshtml.g.cs
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\Administrator\EditRole.cshtml.g.cs
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\Administrator\EditUsersInRole.cshtml.g.cs
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\Administrator\ListRole.cshtml.g.cs
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\Home\create.cshtml.g.cs
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\Home\Details.cshtml.g.cs
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\Home\Edit.cshtml.g.cs
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\Home\EmployeeNotFound.cshtml.g.cs
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\Shared\NotFound.cshtml.g.cs
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.RazorTargetAssemblyInfo.cache
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.RazorTargetAssemblyInfo.cs
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.Views.pdb
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.dll
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.pdb
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.csproj.CopyComplete
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Employee.csprojAssemblyReference.cache
+C:\Users\Wrench\Downloads\EmployeeNew\Employee\Employee\obj\Debug\netcoreapp2.2\Razor\Views\Home\Dashboard.cshtml.g.cs

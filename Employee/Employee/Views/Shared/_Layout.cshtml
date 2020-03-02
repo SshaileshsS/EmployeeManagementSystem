@@ -1,0 +1,73 @@
+﻿@inject SignInManager<ApplicationUser>  signInManager;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/jquery-validate/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <environment include="Development">
+        <link href="~/lib/bootstrap-4.4.1-dist/css/bootstrap.css" rel="stylesheet" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2shai"
+              crossorigin="anonymous"
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap-4.4.1-dist/css/bootstrap.css"
+              asp-fallback-test-class="sr-Only"
+              asp-fallback-test-property="Position"
+              asp-fallback-test-value="Absolute"
+              asp-suppress-fallback-integrity="true" />
+    </environment>
+    <link href="~/lib/fontawesome-free-5.12.1-web/css/all.min.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="content-body">
+        <!-- Image and text -->
+        <nav class="navbar navbar-light bg-dark">
+                    <a class="navbar-brand bg-light" asp-controller="Home" asp-action="dashboard" style="border-radius:6px;padding:5px 10px">
+                        <img src="~/images/img1.png" width="40" height="40" alt="" />
+                        Employee Management System
+                    </a>
+                    <div class="navbar">
+                        <a  asp-controller="Account" asp-action="Login" class="nav-item nav-link"><i class="fas fa-sign-in-alt"></i>&nbspLogin</a>
+                        <a  asp-controller="Account" asp-action="Register" class="nav-item nav-link">Register</a>
+                    </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-2 bg-dark" style="height:800px">
+                    <span style="color:white;opacity:0.5">_________________________________</span>
+                    <div class="sidebar_button pt-3">
+                        <a class="nav-item nav-link" asp-controller="Home" asp-action="dashboard">Dashboard</a>
+                        <a class="nav-item nav-link">Create Role</a>
+                        <a class="nav-item nav-link" asp-controller="Administrator" asp-action="listrole">Employ Roles</a>
+                        <a class="nav-item nav-link" asp-controller="Home" asp-action="index">Employee List</a>
+                    </div>
+                </div>
+
+                <div class="col-9 pt-3 ml-3">
+
+                    <h1 class="mt-3">@ViewBag.Title</h1>
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @if (IsSectionDefined("Scripts"))
+    {
+        @RenderSection("Scripts", required: false)
+    }
+    <script src="~/lib/bootstrap-4.4.1-dist/js/bootstrap.js"></script>
+    <script src="~/lib/jquery/jquery.js"></script>
+
+</body>
+</html>

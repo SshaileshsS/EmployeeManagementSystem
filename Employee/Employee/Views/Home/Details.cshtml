@@ -1,0 +1,36 @@
+﻿@model  HomeDetailsViewModel
+
+@{ 
+    var photoPath = "~/images/" + (Model.employeeProp.photoPath ?? "img1.png");
+}
+
+
+<div class="row justify-content-center m-3">
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-header">
+                <h1>@Model.employeeProp.Name</h1>
+            </div>
+            <div class="card-body text-center">
+                <img class="card-img-top" src="@photoPath" 
+                     asp-append-version="true" />
+
+                <h4>Employee ID : @Model.employeeProp.Id</h4>
+                <h4>Email : @Model.employeeProp.Email</h4>
+                <h4>Department : @Model.employeeProp.Department</h4>
+
+            </div>
+            <div class="card-footer text-center">
+                <a  asp-controller="Home" asp-action="Index" class="btn btn-primary">Back</a>
+                <a asp-controller="home" asp-action="Edit" asp-route-id="@Model.employeeProp.Id" class="btn btn-primary">Edit</a>
+                <a asp-controller="Home" asp-action="Delete" asp-route-id="@Model.employeeProp.Id"
+                   onclick="return alert('Are you sure Want to delete this record')"  class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+
+    <script src="~/lib/twitter-bootstrap/js/bootstrap.js"></script>
+}
