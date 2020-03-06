@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\Wrench\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Wrench\\.nuget\\packages",
+      "C:\\Users\\NEW LAB 14\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\NEW LAB 14\\.nuget\\packages",
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ]
   }
