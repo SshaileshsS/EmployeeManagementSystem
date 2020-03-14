@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\shailesh\\project\\emp\\Employee\\Employee\\Employee.csproj": {}
+    "F:\\shailesh\\emp\\Employee\\Employee\\Employee.csproj": {}
   },
   "projects": {
-    "F:\\shailesh\\project\\emp\\Employee\\Employee\\Employee.csproj": {
+    "F:\\shailesh\\emp\\Employee\\Employee\\Employee.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\shailesh\\project\\emp\\Employee\\Employee\\Employee.csproj",
+        "projectUniqueName": "F:\\shailesh\\emp\\Employee\\Employee\\Employee.csproj",
         "projectName": "Employee",
-        "projectPath": "F:\\shailesh\\project\\emp\\Employee\\Employee\\Employee.csproj",
-        "packagesPath": "C:\\Users\\NEW LAB 14\\.nuget\\packages\\",
-        "outputPath": "F:\\shailesh\\project\\emp\\Employee\\Employee\\obj\\",
+        "projectPath": "F:\\shailesh\\emp\\Employee\\Employee\\Employee.csproj",
+        "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
+        "outputPath": "F:\\shailesh\\emp\\Employee\\Employee\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\NEW LAB 14\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,14 +41,6 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
-            "AWSSDK": {
-              "target": "Package",
-              "version": "[2.3.55.2, )"
-            },
-            "FontAwesome": {
-              "target": "Package",
-              "version": "[4.7.0, )"
-            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -73,10 +65,6 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[2.2.4, )"
-            },
-            "bootstrap": {
-              "target": "Package",
-              "version": "[4.4.1, )"
             }
           },
           "imports": [

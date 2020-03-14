@@ -72,6 +72,23 @@ namespace Employee.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
+            modelBuilder.Entity("Employee.Models.EMPLeave", b =>
+                {
+                    b.Property<int>("LeaveId")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("EndDate");
+
+                    b.Property<string>("LeaveType");
+
+                    b.Property<string>("StartDate");
+
+                    b.HasKey("LeaveId");
+
+                    b.ToTable("EMPLeaves");
+                });
+
             modelBuilder.Entity("Employee.Models.EmployeeProp", b =>
                 {
                     b.Property<int>("Id")

@@ -40,6 +40,7 @@ namespace Employee
                 options.Filters.Add(new AuthorizeFilter(policy));
             });
             services.AddScoped<IEmployeeRepository, SQLRepository>();
+            services.AddScoped<IEmployeeLeaveRepository, SQLLeaveRepository>();
 
             services.AddIdentity<ApplicationUser, IdentityRole>
                 ().AddEntityFrameworkStores<AppDbContext>();

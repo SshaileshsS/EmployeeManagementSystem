@@ -19,5 +19,6 @@ namespace Employee.Models
         public Dept? Department { get; set; }
         public string photoPath { get; set; }
 
-    }
+        //public ICollection<EMPLeave> EMPLeaves { get; set; }
+}
 }

@@ -1,4 +1,4 @@
-﻿using Amazon.IdentityManagement.Model;
+﻿
 using Employee.Models;
 using Employee.ViewsModel;
 using Microsoft.AspNetCore.Authorization;
@@ -17,12 +17,15 @@ namespace Employee.Controllers
     public class HomeController : Controller
     {
         private readonly IEmployeeRepository _employeeRepository;
+        private readonly IEmployeeLeaveRepository _employeeLeaveRepository;
         private readonly IHostingEnvironment _hostingEnviroment;
 
         public HomeController(IEmployeeRepository employeeRepository,
+                              IEmployeeLeaveRepository employeeLeaveRepository,
                               IHostingEnvironment hostingEnvironment)
         {
             _employeeRepository = employeeRepository;
+            _employeeLeaveRepository = employeeLeaveRepository;
             _hostingEnviroment = hostingEnvironment;
         }
 
@@ -162,5 +165,36 @@ namespace Employee.Controllers
             _employeeRepository.Delete(id);
             return RedirectToAction("Index");
         }
+        //[Route("Home")]
+        //[Route("Home/ViewLeaves")]
+        //[HttpGet]
+        //public ViewResult ViewLeaves()
+        //{
+        //    var Model = _employeeLeaveRepository.GetEMPLeaves();
+        //    return View(Model);
+        //}
+        [HttpGet]
+        public ViewResult AddLeave()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult AddLeave(EMPLeave model)
+        {
+            if (ModelState.IsValid)
+            {
+
+                EMPLeave eMPLeave = new EMPLeave
+                {
+                    LeaveType = model.LeaveType,
+                    StartDate = model.StartDate,
+                    EndDate = model.EndDate
+                };
+                _employeeLeaveRepository.AddLeave(eMPLeave);
+                return RedirectToAction("Details");
+            }
+            return View();
+        }
+
     }
 }

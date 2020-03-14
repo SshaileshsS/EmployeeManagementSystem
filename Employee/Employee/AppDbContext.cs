@@ -18,6 +18,7 @@ namespace Employee
 
         }
         public DbSet<EmployeeProp> EmployeeProps { get; set; }
+        public DbSet<EMPLeave> EMPLeaves { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
