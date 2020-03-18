@@ -78,20 +78,26 @@ namespace Employee.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("EndDate");
+                    b.Property<string>("Description");
 
-                    b.Property<string>("LeaveType");
+                    b.Property<int>("EMPId");
 
-                    b.Property<string>("StartDate");
+                    b.Property<DateTime>("EndDate");
+
+                    b.Property<int>("LeaveType");
+
+                    b.Property<DateTime>("StartDate");
 
                     b.HasKey("LeaveId");
+
+                    b.HasIndex("EMPId");
 
                     b.ToTable("EMPLeaves");
                 });
 
             modelBuilder.Entity("Employee.Models.EmployeeProp", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("EMPId")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -106,14 +112,14 @@ namespace Employee.Migrations
 
                     b.Property<string>("photoPath");
 
-                    b.HasKey("Id");
+                    b.HasKey("EMPId");
 
                     b.ToTable("EmployeeProps");
 
                     b.HasData(
                         new
                         {
-                            Id = 1,
+                            EMPId = 1,
                             Department = 1,
                             Email = "shailesh@gmail.com",
                             Name = "shailesh"
@@ -228,6 +234,14 @@ namespace Employee.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("Employee.Models.EMPLeave", b =>
+                {
+                    b.HasOne("Employee.Models.EmployeeProp", "EmployeeProp")
+                        .WithMany("EMPLeaves")
+                        .HasForeignKey("EMPId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

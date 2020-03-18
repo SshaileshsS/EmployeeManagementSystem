@@ -15,9 +15,9 @@
             <img class="card-img-top " style="width:auto;height:250px;" src="@photoPath"
                  asp-append-version="true" />
             <div class="card-footer text-center">
-                <a asp-controller="Home" asp-action="Details" asp-route-id="@employee.Id" class="btn btn-primary">View</a>
-                <a asp-controller="Home" asp-action="Edit" asp-route-id="@employee.Id" class="btn btn-primary">Edit</a>
-                <a asp-controller="Home" asp-action="Delete" asp-route-id="@employee.Id"
+                <a asp-controller="Home" asp-action="Details" asp-route-id="@employee.EMPId" class="btn btn-primary">View</a>
+                <a asp-controller="Home" asp-action="Edit" asp-route-id="@employee.EMPId" class="btn btn-primary">Edit</a>
+                <a asp-controller="Home" asp-action="Delete" asp-route-id="@employee.EMPId"
                    onclick="return alert('Are you sure Want to delete this record')" class="btn btn-danger">Delete</a>
             </div>
         </div>

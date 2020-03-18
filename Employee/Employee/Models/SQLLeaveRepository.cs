@@ -13,7 +13,7 @@ namespace Employee.Models
 		{
 			this.context = context;
 		}
-		public IEnumerable<EMPLeave> GetEMPLeaves()
+		public IEnumerable<EMPLeave> GetAllEMPLeave()
 		{
 			return context.EMPLeaves;
 		}
@@ -23,4 +23,5 @@ namespace Employee.Models
 			context.SaveChanges();
 			return eMPLeave;
 		}
-	}}
+	}
+}

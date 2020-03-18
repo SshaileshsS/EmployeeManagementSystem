@@ -3,6 +3,7 @@ using Employee.Models;
 using Employee.ViewsModel;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -78,6 +79,7 @@ namespace Employee.Controllers
         //[Route("Home")]
         //[Route("Home/Create")]
 
+
         [HttpPost]
         public IActionResult Create(EmployeeCreateViewModel model)
         {
@@ -93,7 +95,7 @@ namespace Employee.Controllers
                     photoPath = uniqueFileName
                 };
                 _employeeRepository.Add(newEmploy);
-                return RedirectToAction("Details", new { id = newEmploy.Id });
+                return RedirectToAction("Details", new { id = newEmploy.EMPId });
             }
             return View();
         }
@@ -105,7 +107,7 @@ namespace Employee.Controllers
             EmployeeProp employeeProp = _employeeRepository.GetEmployeeId(id);
             EmployeeEditViewModel employeeEditViewModel = new EmployeeEditViewModel
             {
-                id = employeeProp.Id,
+                id = employeeProp.EMPId,
                 Name = employeeProp.Name,
                 Email = employeeProp.Email,
                 Department = employeeProp.Department,
@@ -165,14 +167,14 @@ namespace Employee.Controllers
             _employeeRepository.Delete(id);
             return RedirectToAction("Index");
         }
-        //[Route("Home")]
-        //[Route("Home/ViewLeaves")]
-        //[HttpGet]
-        //public ViewResult ViewLeaves()
-        //{
-        //    var Model = _employeeLeaveRepository.GetEMPLeaves();
-        //    return View(Model);
-        //}
+        [Route("Home")]
+        [Route("Home/ViewLeave")]
+        [HttpGet]
+        public ViewResult ViewLeave()
+        {
+            var Model = _employeeLeaveRepository.GetAllEMPLeave();
+            return View(Model);
+        }
         [HttpGet]
         public ViewResult AddLeave()
         {
@@ -181,19 +183,21 @@ namespace Employee.Controllers
         [HttpPost]
         public IActionResult AddLeave(EMPLeave model)
         {
+           
             if (ModelState.IsValid)
             {
 
                 EMPLeave eMPLeave = new EMPLeave
                 {
+                   EMPId = model.EMPId,
                     LeaveType = model.LeaveType,
                     StartDate = model.StartDate,
-                    EndDate = model.EndDate
+                    EndDate = model.EndDate,
                 };
                 _employeeLeaveRepository.AddLeave(eMPLeave);
-                return RedirectToAction("Details");
+                return RedirectToAction("index");
             }
-            return View();
+            return View(model);
         }
 
     }

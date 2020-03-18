@@ -17,6 +17,8 @@ namespace Employee
         {
 
         }
+
+        
         public DbSet<EmployeeProp> EmployeeProps { get; set; }
         public DbSet<EMPLeave> EMPLeaves { get; set; }
 
@@ -26,7 +28,7 @@ namespace Employee
             modelBuilder.Entity<EmployeeProp>().HasData(
                     new EmployeeProp
                     {
-                        Id = 1,
+                        EMPId = 1,
                         Name = "shailesh",
                         Department = Dept.Hr,
                         Email = "shailesh@gmail.com"

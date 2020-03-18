@@ -9,7 +9,8 @@ namespace Employee.Models
 {
     public class EmployeeProp
     {
-        public int Id { get; set; }
+        [Key]
+        public int EMPId { get; set; }
         [Required]
         [MaxLength(50,ErrorMessage = "Name must be less than 50 characters")]
         public String Name { get; set; }
@@ -18,7 +19,6 @@ namespace Employee.Models
         [Required]
         public Dept? Department { get; set; }
         public string photoPath { get; set; }
-
-        //public ICollection<EMPLeave> EMPLeaves { get; set; }
-}
+        public ICollection<EMPLeave> EMPLeaves { get; set; }
+    }
 }

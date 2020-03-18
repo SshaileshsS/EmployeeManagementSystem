@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\shailesh\\emp\\Employee\\Employee\\Employee.csproj": {}
+    "D:\\xhair\\project\\Employee\\Employee\\Employee.csproj": {}
   },
   "projects": {
-    "F:\\shailesh\\emp\\Employee\\Employee\\Employee.csproj": {
+    "D:\\xhair\\project\\Employee\\Employee\\Employee.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\shailesh\\emp\\Employee\\Employee\\Employee.csproj",
+        "projectUniqueName": "D:\\xhair\\project\\Employee\\Employee\\Employee.csproj",
         "projectName": "Employee",
-        "projectPath": "F:\\shailesh\\emp\\Employee\\Employee\\Employee.csproj",
-        "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-        "outputPath": "F:\\shailesh\\emp\\Employee\\Employee\\obj\\",
+        "projectPath": "D:\\xhair\\project\\Employee\\Employee\\Employee.csproj",
+        "packagesPath": "C:\\Users\\Wrench\\.nuget\\packages\\",
+        "outputPath": "D:\\xhair\\project\\Employee\\Employee\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Wrench\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,7 +25,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://www.nuget.org/api/v2": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {

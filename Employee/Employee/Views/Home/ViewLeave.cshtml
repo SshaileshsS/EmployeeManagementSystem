@@ -1,0 +1,31 @@
+﻿@model IEnumerable<EMPLeave>
+    <div class="row lg-12 bg-secondary p-2" style="border-radius: 5px">
+
+        <div class="col-1">LeaveId</div>
+        <div class="col-1">LeaveType</div>
+        <div class="col-3">StartDate</div>
+        <div class="col-3">EndDate</div>
+        <div class="col-1">EMPId</div>
+        </div>
+        <div class="row lg-12 p-2" style="border-radius: 5px">
+
+            @foreach (var leave in Model)
+            {
+
+                <div class="col-1">@leave.LeaveId</div>
+                <div class="col-1">@leave.LeaveType</div>
+                <div class="col-3">@leave.StartDate</div>
+                <div class="col-3">@leave.EndDate</div>
+                <div class="col-1">@leave.EMPId</div>
+                <div class="col-2">
+                    <a asp-controller="Home" asp-action="ViewLeave" asp-route-id="@leave.LeaveId" class="btn btn-primary">View</a>
+                    <a asp-controller="Home" asp-action="ViewLeave" asp-route-id="@leave.LeaveId"
+                       onclick="return alert('Are you sure Want to delete this record')" class="btn btn-danger">Delete</a>
+                </div>
+            }
+        </div>
+
+        @section Scripts {
+
+            <script src="~/lib/twitter-bootstrap/js/bootstrap.js"></script>
+        }

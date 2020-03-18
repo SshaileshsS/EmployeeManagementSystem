@@ -1,31 +1,43 @@
 ﻿@model EMPLeave
 
+
 @{
     ViewBag.Title = "Add Leave";
 }
 
     <form enctype="multipart/form-data" asp-controller="home" asp-action="AddLeave" method="post" class="mt-3">
+
+
         <div class="form-group row">
             <label asp-for="LeaveType" class="col-sm-2 col-form-label"></label>
-            <div class="col-sm-10">
-                <input asp-for="LeaveType" class="form-control" placeholder="Name">
+            <div class="col-sm-8">
+                <select asp-for="LeaveType" class="custom-select mr-sm-2"
+                       asp-items="Html.GetEnumSelectList<LeaveTypeEnum>()">
+                    <option value="" >Please Select</option>
+                </select>
                 <span class="text-danger" asp-validation-for="LeaveType"></span>
+            </div>
+            
+        </div>
+        <div class="form-group row">
+            <label asp-for="Description" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-8">
+                <input asp-for="Description" class="form-control" placeholder="Description For leave">
+                <span class="text-danger" asp-validation-for="Description"></span>
             </div>
         </div>
         <div class="form-group row">
             <label asp-for="StartDate" class="col-sm-2 col-form-label"></label>
-            <div class="col-sm-10">
+            <div class="col-sm-3">
                 <input asp-for="StartDate" class="form-control" placeholder="Email">
                 <span class="text-danger" asp-validation-for="StartDate"></span>
             </div>
-        </div>
-        <div class="form-group row">
-            <label asp-for="EndDate" class="col-sm-2 col-form-label"></label>
-            <div class="col-sm-10">
+            <label asp-for="EndDate" class="col-sm-0 col-form-label"></label>
+            <div class="col-sm-3">
                 <input asp-for="EndDate" class="form-control" placeholder="Email">
                 <span class="text-danger" asp-validation-for="EndDate"></span>
             </div>
-            </div>
+        </div>
 
         <div class="text-danger" asp-validation-summary="All"></div>
 

@@ -35,10 +35,26 @@
                         <img src="~/images/img1.png" width="40" height="40" alt="" />
                         Employee Management System
                     </a>
-                    <div class="navbar">
-                        <a  asp-controller="Account" asp-action="Login" class="nav-item nav-link"><i class="fas fa-sign-in-alt"></i>&nbspLogin</a>
-                        <a  asp-controller="Account" asp-action="Register" class="nav-item nav-link">Register</a>
-                    </div>
+                    <ul class="navbar-nav ml-auto">
+                        @if (signInManager.IsSignedIn(User))
+                        {
+                            <div class="navbar">
+                                <form method="post" asp-action="Logout" asp-controller="Account">
+                                    <button class=" nav-item  btn btn-link py-0" style="width:auto;font-size:20px;color:white">
+                                        Logout @User.Identity.Name
+                                    </button>
+                                </form>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="navbar">
+                <a  asp-controller="Account" class="nav-item " style="padding: 10px 20px 10px 20px;" asp-action="Login" ><i class="fas fa-sign-in-alt"></i>&nbspLogin</a>
+                <a  asp-controller="Account" class="nav-item " style="padding: 10px 20px 10px 20px;" asp-action="Register">Register</a>
+            </div>
+                        }
+                    </ul>
+                   
         </nav>
         <div class="container-fluid">
             <div class="row">
@@ -46,10 +62,11 @@
                 <div class="col-lg-2 bg-dark" style="height:800px">
                     <span style="color:white;opacity:0.5">_________________________________</span>
                     <div class="sidebar_button pt-3">
-                        <a class="nav-item nav-link" asp-controller="Home" asp-action="dashboard">Dashboard</a>
-                        <a class="nav-item nav-link" asp-controller="Administrator" asp-action="createrole">Create Role</a>
-                        <a class="nav-item nav-link" asp-controller="Administrator" asp-action="listrole">Employ Roles</a>
+                        <a class="nav-item nav-link" asp-controller="Home" asp-action="Dashboard">Dashboard</a>
+                        <a class="nav-item nav-link" asp-controller="Administrator" asp-action="CreateRole">Create Role</a>
+                        <a class="nav-item nav-link" asp-controller="Administrator" asp-action="ListRole">Employ Roles</a>
                         <a class="nav-item nav-link" asp-controller="Home" asp-action="index">Employee List</a>
+                        <a class="nav-item nav-link" asp-controller="Home" asp-action="Create">Add Employee</a>
                     </div>
                 </div>
 

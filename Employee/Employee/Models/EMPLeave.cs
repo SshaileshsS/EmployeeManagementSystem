@@ -11,12 +11,19 @@ namespace Employee.Models
 	{
 		[Key]
 		public int LeaveId { get; set; }
-		public string LeaveType { get; set; }
-		public string StartDate { get; set; }
-		public string EndDate { get; set; }
-		//public int EMPId { get; set; }
-		//[ForeignKey("EMPId")]
-		//public EmployeeProp EmployeeProp { get; set; }
-
+		[Required]
+		public LeaveTypeEnum? LeaveType { get; set; }
+		[Required]
+		public  string Description { get; set; }
+		[DataType(DataType.Date)]
+		[DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+		public DateTime StartDate { get; set; }
+		[DataType(DataType.Date)]
+		[DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+		public DateTime EndDate { get; set; }
+		
+		public int EMPId { get; set; }
+		[ForeignKey("EMPId")]
+		public EmployeeProp EmployeeProp { get; set; }
 	}
 }

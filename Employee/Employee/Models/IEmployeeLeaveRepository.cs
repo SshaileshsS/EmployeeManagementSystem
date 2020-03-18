@@ -7,9 +7,10 @@ namespace Employee.Models
 {
 	public interface IEmployeeLeaveRepository
 	{
-		IEnumerable<EMPLeave> GetEMPLeaves();
+		IEnumerable<EMPLeave> GetAllEMPLeave();
 
 		//EmployeeProp GetLeaveById(int Id);
+
 		EMPLeave AddLeave(EMPLeave eMPLeave);
 		//EmployeeProp UpdateLeave(EmployeeProp EmployeeChanges);
 		//EmployeeProp DeleteLeave(int id);
